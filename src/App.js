@@ -16,7 +16,7 @@ function App() {
     );
   }
 
-  return <Chat />;
+  return <Chat Auth={Auth} setAuth={setAuth} />;
 }
 
 export default App;

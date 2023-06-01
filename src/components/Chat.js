@@ -1,7 +1,29 @@
 import React from "react";
+import "./Chat.css";
+import Cookies from "universal-cookie/cjs/Cookies";
+import Login from "./Login";
 
-const Chat = () => {
-  return <div>Chat</div>;
+const Chat = ({ Auth, setAuth }) => {
+  const cookies = new Cookies();
+  const handleSignOut = () => {
+    cookies.remove("auth-token");
+    setAuth(false);
+  };
+
+  if (Auth) {
+    return (
+      <div className="chat-container">
+        <div className="chat-container-box">
+          <h1>Chat</h1>
+          <button className="signout-button" onClick={handleSignOut}>
+            Sign Out
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return <Login />;
 };
 
 export default Chat;
