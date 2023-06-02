@@ -1,7 +1,6 @@
 import React from "react";
 import Login from "./components/Login";
 import { useState } from "react";
-import { auth, provider } from "./firebase-config";
 import Chat from "./components/Chat";
 import Cookies from "universal-cookie/cjs/Cookies";
 
