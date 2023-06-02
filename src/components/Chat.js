@@ -6,24 +6,20 @@ import Login from "./Login";
 const Chat = ({ Auth, setAuth }) => {
   const cookies = new Cookies();
   const handleSignOut = () => {
-    cookies.remove("auth-token");
+    cookies.remove("auth-email");
     setAuth(false);
   };
 
-  if (Auth) {
-    return (
-      <div className="chat-container">
-        <div className="chat-container-box">
-          <h1>Chat</h1>
-          <button className="signout-button" onClick={handleSignOut}>
-            Sign Out
-          </button>
-        </div>
+  return (
+    <div className="chat-container">
+      <div className="chat-container-box">
+        <h1>Chat</h1>
+        <button className="signout-button" onClick={handleSignOut}>
+          Sign Out
+        </button>
       </div>
-    );
-  }
-
-  return <Login />;
+    </div>
+  );
 };
 
 export default Chat;

@@ -7,7 +7,7 @@ import Cookies from "universal-cookie/cjs/Cookies";
 
 function App() {
   const cookies = new Cookies();
-  const [Auth, setAuth] = useState(cookies.get("auth-token"));
+  const [Auth, setAuth] = useState(cookies.get("auth-email"));
   if (!Auth) {
     return (
       <div className="App">
