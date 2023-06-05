@@ -1,7 +1,7 @@
 import React from "react";
 import Login from "./components/Login";
 import { useState } from "react";
-import Chat from "./components/Chat";
+import Menu from "./components/Menu";
 import Cookies from "universal-cookie/cjs/Cookies";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     );
   }
 
-  return <Chat Auth={Auth} setAuth={setAuth} />;
+  return <Menu Auth={Auth} setAuth={setAuth} />;
 }
 
 export default App;
