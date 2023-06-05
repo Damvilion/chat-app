@@ -11,9 +11,17 @@ const GlobalChat = ({ setChatRoom }) => {
         <h1>Chat App</h1>
       </header>
       <div className="global-chat-main">
-        <div className="global-chat-box">
-          <div className="global-chat-log"></div>
-          <div className="global-chat-room"></div>
+        <div className="new-square">
+          <div className="global-chat-box">
+            <div className="global-chat-log"></div>
+            <div className="global-chat-room"></div>
+          </div>
+
+          <div className="input-box">
+            <h1>Chat Room</h1>
+            <input type="text" placeholder="Send your text" />
+            <h1>Messages</h1>
+          </div>
         </div>
       </div>
 
