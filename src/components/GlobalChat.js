@@ -29,7 +29,7 @@ const GlobalChat = ({ chatRoom, setChatRoom }) => {
   return (
     <div className="global-chat-container">
       <header className="global-header">
-        <h1>Chat App</h1>
+        <h1 className="main-text">Chat App</h1>
       </header>
       <div className="global-chat-main">
         <div className="new-square">
@@ -39,7 +39,7 @@ const GlobalChat = ({ chatRoom, setChatRoom }) => {
           </div>
 
           <div className="input-box">
-            <h1>Chat Room</h1>
+            <h1 className="global-chat-text">Chat Room</h1>
             <input
               type="text"
               placeholder="Send your text"
@@ -49,7 +49,7 @@ const GlobalChat = ({ chatRoom, setChatRoom }) => {
                 setNewMes(e.target.value);
               }}
             />
-            <h1>Messages</h1>
+            <h1 className="global-chat-text">Messages</h1>
           </div>
         </div>
       </div>
