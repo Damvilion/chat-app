@@ -28,7 +28,7 @@ const Menu = ({ setAuth }) => {
   return (
     <div className="chat-container">
       {chatRoom ? (
-        <GlobalChat setChatRoom={setChatRoom} />
+        <GlobalChat setChatRoom={setChatRoom} chatRoom={chatRoom} />
       ) : (
         <div>
           <div className="chat-container-box">
