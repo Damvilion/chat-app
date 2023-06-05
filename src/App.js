@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import { useState } from "react";
 import Menu from "./components/Menu";
 import Cookies from "universal-cookie/cjs/Cookies";
+import GlobalChat from "./components/GlobalChat";
 
 function App() {
   const cookies = new Cookies();
@@ -14,7 +15,6 @@ function App() {
       </div>
     );
   }
-
   return <Menu Auth={Auth} setAuth={setAuth} />;
 }
 

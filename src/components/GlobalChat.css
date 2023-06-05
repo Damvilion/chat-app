@@ -1,0 +1,36 @@
+.global-chat-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.global-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.global-chat-main {
+  display: flex;
+  justify-content: center;
+  height: 70%;
+}
+
+.global-chat-main > div {
+  display: flex;
+  border: solid;
+  width: 60%;
+  height: 100%;
+}
+
+.global-chat-main > div > div {
+  border: solid;
+  flex: 1;
+}
+
+.global-send-container {
+  display: flex;
+  justify-content: center;
+}
+
+.global-send-button {
+  margin: 30px;
+}
